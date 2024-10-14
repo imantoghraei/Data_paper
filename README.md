@@ -42,7 +42,7 @@ cd python_codes_all_figures
 - **`run/` subdirectory**: Contains scripts for compiling the programs, linking input datasets, and generating outputs. The `Makefile` may need to be adapted for your specific system. To launch the offline parameterization, run:
 
   ```bash
-  ./laun.sh
+  ./loop_gwd_healpix_chopin_2d.sh
   ```
 
 - **`prog/` subdirectory**: Contains the Fortran routines that execute the parameterization schemes:
