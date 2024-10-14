@@ -36,6 +36,8 @@ cd python_codes_all_figures
 
 ### 2. Running offline parameterization schemes 
 
+"offline/run/" directory contains the scripts that compile the programs, link to the input dataset and produce various outputs. The Makefile
+certainly needs to be adapted to the computer. To launch the offline parameterization, launch: ./laun.sh
 
 ### 3. Generating figures
 To generate figures, simply run
