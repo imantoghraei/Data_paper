@@ -1,7 +1,7 @@
 #!/bin/bash
 year=2020
-mnth=12
-itdeb=1
+mnth=03
+itdeb=20
 itjum=1  # To jump 1 day (1: every 3 hours)
 nit=167
 itfin=$(( itdeb + ( nit -1 ) * itjum ))
@@ -11,9 +11,8 @@ NSIDE=64
 NPIX=49152
 IIM=$(( 360 / istri ))
 JJM=$(( 180 / istri + 1 )) 
-#vesri=/Data/dsk1/flott/VESRI
-#vesri=/sauvegarde/flott/dsk1/VESRI
-vesri=/dsk1/flott/VESRI
+# use the location where ICON data are stored
+vesri=...
 echo 'nit=' $nit 'itfin=' $itfin
 echo 'nside='$NSIDE
 echo 'iim='$IIM
@@ -57,29 +56,12 @@ EOF2
 
 #Inputs:  #spring data
 #ln -s $vesri/era5/data data   
-#ln -s $vesri/laura/coarse_grained/nextgems_3dvariables_n64.nc VITUV_PRESS_TEMP.nc
-#ln -s $vesri/laura/coarse_grained/nextgems_w_level_full_n64.nc VITW.nc
-#ln -s $vesri/laura/coarse_june24/nextgems_precipflux_n64_spring.nc PREC.nc
-#ln -s $vesri/laura/coarse_grained/vvor/nextgems_vvor_n64_spring.nc VORT.nc
-#ln -s $vesri/laura/coarse_june24/products_winds_temp_20200320_20200409.nc products_winds.nc
+#ln -s $vesri/nextgems_3dvariables_n64.nc VITUV_PRESS_TEMP.nc
+#ln -s $vesri/nextgems_w_level_full_n64.nc VITW.nc
+#ln -s $vesri/nextgems_precipflux_n64_spring.nc PREC.nc
+#ln -s $vesri/nextgems_vvor_n64_spring.nc VORT.nc
+#ln -s $vesri/products_winds_temp_20200320_20200409.nc products_winds.nc
 
-#Inputs:  #summer data
-#ln -s $vesri/laura/coarse_grained/nextgems_3dvariables_n64_summer.nc VITUV_PRESS_TEMP.nc
-#ln -s $vesri/laura/coarse_grained/nextgems_precipflux_n64_summer.nc PREC.nc
-#ln -s $vesri/laura/coarse_grained/vvor/nextgems_vvor_n64_summer.nc VORT.nc
-#ln -s $vesri/laura/coarse_grained/products_winds_temp_20200620_20200710.nc products_winds.nc
-
-#Inputs:  #autumn data
-#ln -s $vesri/laura/coarse_grained/nextgems_3dvariables_n64_autumn.nc VITUV_PRESS_TEMP.nc
-#ln -s $vesri/laura/coarse_june24/nextgems_precipflux_n64_autumn.nc PREC.nc
-#ln -s $vesri/laura/coarse_grained/vvor/nextgems_vvor_n64_autumn.nc VORT.nc
-#ln -s $vesri/laura/coarse_june24/products_winds_temp_20200920_20201010.nc products_winds.nc
-
-#Inputs:  #winter data
-ln -s $vesri/laura/coarse_grained/nextgems_3dvariables_n64_winter.nc VITUV_PRESS_TEMP.nc
-ln -s $vesri/laura/coarse_june24/nextgems_precipflux_n64_winter.nc PREC.nc
-ln -s $vesri/laura/coarse_grained/vvor/nextgems_vvor_n64_winter.nc VORT.nc
-ln -s $vesri/laura/coarse_june24/products_winds_temp_20201220_20210109.nc products_winds.nc
 
 ln -s ../prog/*.h .
 ln -s ../prog/acama_gwd_rando_${version}.f90 acama_gwd_rando.f90
