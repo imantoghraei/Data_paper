@@ -1,9 +1,0 @@
-F90 are where the online routines used in QBOi
-f90 is for the offline routnes.  The one adapted from the QBOi runs
-incude QBOi in their name explicitely.
-
-bruno_gwd_rando_m14c.f90 comes from:
-~/flott_local/bruno/offline_v7/prog/acama_gwd_rando_m14c.f90
-It is an attempt to include sources from various model levels.
-
-
