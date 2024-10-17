@@ -1,6 +1,6 @@
 # Can Parameterizations Reproduce Gravity Waves Momentum Fluxes and Drag Simulated by a Global High-Resolution Model?
 
-This repository contains the necessary files and instructions for generating data and figures used in the paper *"Can parameterizations reproduce the gravity waves momentum fluxes and drag simulated by a global high-resolution model?"*. It includes raw ICON data, parameterization schemes, and Python code for figure generation.
+This repository contains the necessary files and instructions for generating data and figures used in the paper *"Can parameterizations reproduce the gravity waves momentum fluxes and drag simulated by a global high-resolution model?"*. It includes a link to download ICON data, Fortran codes for parameterization schemes, and a Python code for figure generation.
 
 ## Table of Contents
 
@@ -11,9 +11,9 @@ This repository contains the necessary files and instructions for generating dat
 
 ## Introduction
 
-- The `ICON.txt` file contains the link to download ICON meteorological data and their corresponding fluxes.
-- The `offline/` directory contains code to run the parameterization schemes offline using ICON meteorological data.
-- The `paper_figures.py` script generates the figures used in the paper, based on data from the parameterization and ICON simulations.
+- The `ICON.txt` file contains the link to download ICON meteorological data.
+- The `offline/` directory contains codes to run the parameterization schemes offline using ICON meteorological data.
+- The `paper_figures.py` script generates the figures used in the paper, based on data saved from the offline parameterization.
 
 ## Features
 
